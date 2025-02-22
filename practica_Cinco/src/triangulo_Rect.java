@@ -13,3 +13,4 @@ public class triangulo_Rect {
 
     }
 }
+
