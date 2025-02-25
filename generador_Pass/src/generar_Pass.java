@@ -24,3 +24,5 @@ public class generar_Pass {
         JOptionPane.showMessageDialog(null, mensaje);
     }
 }
+
+
