@@ -1,19 +1,23 @@
 import javax.swing.JOptionPane;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        account Cliente = new account();
+        Scanner sc = new Scanner(System.in);
+
         String cuenta = JOptionPane.showInputDialog("Ingresa el numero de cuenta: ");
         int no_Cuenta = Integer.parseInt(cuenta);
-        Cliente.numero_Cuenta = no_Cuenta;
+
         String titular = JOptionPane.showInputDialog("Titular de la cuenta: ");
-        Cliente.titular = titular;
+
         String in_Edad = JOptionPane.showInputDialog("Ingresa la edad: ");
         int edad = Integer.parseInt(in_Edad);
-        Cliente.edad = edad;
+
         String in_Saldo = JOptionPane.showInputDialog("Ingresa el saldo inicial: ");
         double saldo = Double.parseDouble(in_Saldo);
-        Cliente.saldo = saldo;
+
         String[] opciones = {"Consultar saldo", "Ingresar efectivo", "Retirar efectivo", "Depositar a una cuenta", "Salir"};
+
+        account Cliente = new account(no_Cuenta, titular, edad, saldo);
         int opcion;
 
         do {

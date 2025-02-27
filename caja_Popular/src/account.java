@@ -1,10 +1,17 @@
 
 import javax.swing.JOptionPane;
 public class account {
-    public int numero_Cuenta;
-    public String titular;
-    public int edad;
-    public double saldo;
+    private int numero_Cuenta;
+    private String titular;
+    private int edad;
+    private double saldo;
+
+    public account(int numero_Cuenta, String titular, int edad, double saldo) {
+        this.numero_Cuenta = numero_Cuenta;
+        this.titular = titular;
+        this.edad = edad;
+        this.saldo = saldo;
+    }
 
     public void consultar_Saldo(){
         String mensaje = "Titular: " + titular + "\nSaldo: $" + saldo;
@@ -35,6 +42,49 @@ public class account {
         mensaje+="\nEl saldo es:\n " + saldo;
         JOptionPane.showMessageDialog(null,mensaje);
     }
+
+
+
+
+
+
+
+
+
+
+
+    public int getNumero_Cuenta() {
+        return numero_Cuenta;
+    }
+
+    public void setNumero_Cuenta(int numero_Cuenta) {
+        this.numero_Cuenta = numero_Cuenta;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
 }
 
 

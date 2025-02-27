@@ -8,7 +8,7 @@ public class Main {
         master_Chief.recargar_Arma(75);
         master_Chief.correr(true);
         //intento cotana:
-        //master_Chief.
+        //master_Chief
 
         master_Chief.setNombre("Brian Barron");
         master_Chief.mostrar_Info();
