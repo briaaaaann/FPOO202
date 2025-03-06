@@ -29,3 +29,6 @@ public class Soldado {
         System.out.println("Arma: " + arma);
     }
 }
+
+
+

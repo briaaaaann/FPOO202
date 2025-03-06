@@ -6,3 +6,4 @@ public class SpartanII extends Spartan {
         System.out.println(nombre + " usa tacticas avanzadas y cuenta con mas escudo");
     }
 }
+
